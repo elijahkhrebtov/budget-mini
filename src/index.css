@@ -11,12 +11,19 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 .app {
   display: grid;
   grid-template-columns: 1fr 360px;
   gap: 20px;
   padding: 20px;
   align-items: start;
+  max-width: 1400px;
+  flex-grow: 1;
 }
 
 /* Calendar */
